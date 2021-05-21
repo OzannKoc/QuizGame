@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:~/testDB
+    username: quizGame
+    password: 123
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    database: h2
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
